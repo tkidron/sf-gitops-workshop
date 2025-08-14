@@ -23,4 +23,4 @@ org_settings:
   webhook_settings:
     activities_webhook:
       enable_activities_webhook: true
-      destuination_url: https://reddit.com
+      destination_url: https://reddit.com

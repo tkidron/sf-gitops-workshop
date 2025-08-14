@@ -13,8 +13,8 @@ controls: # This cannot be set here and in no-team.yml
 org_settings:
   webhook_settings:
     activities_webhook:
-      enable_activity_webhook: true
-      destination_url: https://www.example.com
+      enable_activities_webhook: true
+      destination_url: https://www.reddit.com
   server_settings:
     server_url: $FLEET_URL
   org_info:

@@ -17,7 +17,7 @@ queries:
 agent_options:
   path: ../lib/agent-options.yml
 controls:
-  macos_settings
+  macos_settings:
     custom_settings:
       -path: /Users/talkidron/Documents/GitHub/sf-gitops-workshop/lib/macos/configuration-profiles/disable-bluetooth-file-sharing.mobileconfig
   scripts:

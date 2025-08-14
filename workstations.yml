@@ -7,28 +7,23 @@
 # Then add that secret to .github/workflows/workflow.yml as an env variable.
 # The secret name in the YAML file must match the secret name in GitHub Actions secrets.
 
-name: New Hires
+name: Workstations
 policies:
   - path: ../lib/macos/policies/macos-device-health.policies.yml
   - path: ../lib/windows/policies/windows-device-health.policies.yml
   - path: ../lib/linux/policies/linux-device-health.policies.yml
 queries:
   - path: ../lib/all/queries/collect-usb-devices.queries.yml
+  - path: ../lib/all/queries/collect-failed-login-attempts.queries.yml
 agent_options:
   path: ../lib/agent-options.yml
 controls:
-  macs_os_updates:
-    deadline: "2025-08-21"
-    minimum_version: "16.0"
-  macos_settings:
-    custom_settings:
-      -path: ../lib/macos/configuration-profiles/disable-bluetooth-fileshare.mobileconfig
   scripts:
     - path: ../lib/macos/scripts/remove-zoom-artifacts.script.sh
     - path: ../lib/macos/scripts/set-timezone.script.sh
 team_settings:
   secrets:
-    - secret: "$FLEET_NEW_HIRES_ENROLL_SECRET"
+    - secret: "$FLEET_WORKSTATIONS_ENROLL_SECRET"
   features:
     enable_host_users: true
     enable_software_inventory: true

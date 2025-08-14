@@ -1,0 +1,33 @@
+# For Fleet Free:
+# - This file updates policies, queries, agent_options, and controls for all hosts.
+
+# For Fleet Premium:
+# - This file updates policies and queries that run on all hosts ("All teams").
+# - Remove "controls" and add this to your YAML files in teams/ instead.
+
+policies:
+queries:
+agent_options:
+  path: ./lib/agent-options.yml
+controls: # This cannot be set here and in no-team.yml
+org_settings:
+  fleet_deskop:
+    transparency_url: https://catoftheday.com
+  server_settings:
+    server_url: $FLEET_URL
+  org_info:
+    org_name: Fleetity Deet Deet
+  secrets:
+    - secret: "$FLEET_GLOBAL_ENROLL_SECRET"
+  features:
+    enable_host_users: true
+    enable_software_inventory: true
+  host_expiry_settings:
+    host_expiry_enabled: true
+    host_expiry_window: 30
+  webhook_settings:
+    activities_webhook:
+      enabled_activities_webhook: true
+      destination_url: "https://reddit.com
+
+  

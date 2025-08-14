@@ -14,7 +14,7 @@ org_settings:
   webhook_settings:
     activities_webhook:
       enable_activity_webhook: true
-      destination_url: https://www.reddit.com/
+      destination_url: https://www.example.com
   server_settings:
     server_url: $FLEET_URL
   org_info:

@@ -13,11 +13,11 @@ policies:
   - path: ../lib/windows/policies/windows-device-health.policies.yml
   - path: ../lib/linux/policies/linux-device-health.policies.yml
 queries:
-  - path: ../lib/all/queries/collect-usb-devices.queries.yml
+  path: ../lib/all/queries/collect-usb-devices.queries.yml
 agent_options:
  - path: ../lib/agent-options.yml
 controls:
-  macs_os_updates:
+  macos_updates:
     deadline: "2025-08-21"
     minimum_version: "16.0"
   macos_settings:

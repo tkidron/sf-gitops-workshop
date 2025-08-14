@@ -26,6 +26,6 @@ org_settings:
     host_expiry_enabled: true
     host_expiry_window: 30
   webhook_settings:
-  activities_webhook:
-    enable_activity_webhook: true
-    destination_url: https://www.reddit.com/r/fleetdm/comments/1z3x4k5/fleet_webhook_test/
+    activities_webhook:
+      enable_activity_webhook: true
+      destination_url: https://www.reddit.com/r/fleetdm/comments/1z3x4k5/fleet_webhook_test/
